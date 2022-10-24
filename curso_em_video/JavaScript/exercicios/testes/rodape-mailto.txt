@@ -1,0 +1,21 @@
+<style>
+    footer {
+                background-color: black;
+                color: white;
+                padding: 10px;
+                text-align: center;
+            }
+    
+            footer p > a {
+                text-decoration: none;
+                color: white;
+            }
+    
+            footer p > a:hover {
+                color: rgb(0, 132, 255);
+            }
+</style>
+
+<footer>
+        <p>&copy; <a href="https://github.com/Vitin-Ps" target="_blank">MailtoDesenvolper</a></p>
+    </footer>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: rgb(94, 0, 0);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        a::before{
+            content: '♦';
+            color: red;
+        }
+
+        a::after{
+            content: '♦ Link';
+            color: red;
+            font-style: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <oul>
+        <li><a href="https://github.com/Vitin-Ps/Meus-Projetos" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Canal no youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do Curso em vídeo</a></li>
+    </ul>
+    
+</body>
+</html>

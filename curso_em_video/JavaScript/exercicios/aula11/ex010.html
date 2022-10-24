@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --cor0: rgb(255, 217, 2);
+            --cor1: rgb(39, 39, 39);
+            --cor2: rgb(255, 196, 2);
+            --cor3: rgba(255, 196, 2, 0.425);
+
+        }
+       body {
+        background-color: rgb(255, 217, 2);
+    
+       } 
+
+       header {
+        background-color: var(--cor1);
+        color: white;
+        height: 140px;
+        text-align: center;
+       }
+       header>h1{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+        font: normal bold 25pt Arial, sans-serif;
+        line-height: 135px;
+       }
+
+       main {
+        background-color: white;
+        padding: 10px;
+        width: 90%;
+        height: 300px;
+        margin: auto;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+        font: normal bold 15pt Arial, sans-serif;
+
+       }
+
+       main> section{
+        background-color: var(--cor3);
+        width: 80%;
+        height: 80%;
+        padding: 20px;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.479);
+       }
+
+       main > section > p {
+        background-color: var(--cor2);
+        padding: 10px;
+        margin: -19px -19px 0px -19px;
+        border-radius: 15px 15px 0px 0px;
+        text-align: center;
+}
+
+        main > section > article {
+            margin: 20px auto 0px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main > section > article > input#txtvel{
+            background-color: var(--cor2);
+            height: 25px;
+            
+        }
+
+        main > section > article > input#botao{
+            display: block;
+            margin: 50px auto 0px auto;
+
+        }
+
+        main > section  div {
+            font-size:  5pt;
+        }
+       
+       footer {
+        background-color: var(--cor1);
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistemas de Multas</h1>
+    </header>
+   
+    <main> 
+        <section>
+            <p>Velocidade do carro</p>
+            <article>
+                <input type="number" name="txtvel" id="txtvel">
+                <span>Km/h</span>
+                <br>
+                <input type="button" value="Verificar" onclick="calcular()" id="botao">
+            </article>
+            <div id="res">
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>Mailto Desenvolper</p>
+    </footer>
+    <script>
+        
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong>.</p>`
+           
+            if(vel > 60){
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade.</p>` 
+            }
+            res.innerHTML += `<p>Dirija Sempre com o cinto de segurança.</p>`
+
+
+        }
+    </script>
+    
+</body>
+</html>

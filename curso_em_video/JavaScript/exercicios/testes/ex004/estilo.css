@@ -1,0 +1,66 @@
+@charset "UTF_8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to left, #CFCCD6 , #9fa5c0, #8483a3); 
+    font: normal 15pt Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+section {
+    background-color: white;
+    border-radius: 10px; 
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+}
+
+section div {
+    margin: 10px;
+}
+
+section div table tr td {
+    padding: 10px;
+}
+
+section div select {
+    padding: 10px;
+}
+
+section  div  table  tr > td > div#botao {
+    background-color: rgb(0, 89, 255);
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+}
+
+section > div > select option {
+    margin: 4px;
+} 
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+footer p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p > a:hover {
+    color: rgb(1, 40, 77);
+}

@@ -1,0 +1,78 @@
+@charset "UTF_8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #1d1d24;
+    --cor1: #66657c;
+    --cor3: #a59e9e;
+    --cor4: #e0e0e0;
+}
+
+body{
+    background-image: linear-gradient(to left, #CFCCD6 , #9fa5c0, #8483a3);
+    font: normal 15pt Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+section {
+    background-color: white;
+    border-radius: 10px; 
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+}
+
+section > div > table tr td {
+    padding: 10px;
+    width: 90%;
+}
+
+section > div table  tr > td > input#botaoad {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 7px;
+    border-radius: 5px;
+    border-color: var(--cor0);
+    
+}
+
+section > div > input#botaofn {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    margin-bottom: 30px;
+    padding: 7px;
+    border-radius: 5px;
+    border-color: var(--cor0);
+}
+section > div > select {
+    width: 40%;
+    padding: 10px;
+    margin: 30px;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+footer p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p > a:hover {
+    color: rgb(0, 55, 107);
+}

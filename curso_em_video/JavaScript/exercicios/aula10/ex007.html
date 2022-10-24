@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+
+        body {
+            font: normal 18pt Arial, sans-serif;
+            background-image: linear-gradient(to right, rgb(255, 72, 0) ,rgb(255, 136, 0) ,rgb(255, 153, 0));
+        }
+
+        main{
+            background-color: white;
+            padding: 30px;
+            margin: 70px auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.411);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        input{
+            font: normal 18pt Arial, sans-serif;
+            width: 100px;
+        }
+
+        main > input#somar2 {
+            margin: 30px;
+            border-radius: 5px;
+        }
+
+        
+
+        div#res {
+            margin-top: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando valores</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2"> <br>
+        <input type="button" value="somar" onclick="somar()" onmousedown="mbaixo()" onmouseup="mcima()" id="somar2">
+        <div id="res">Resultado</div>
+    </main>
+
+    <script>
+        function somar() {
+            var tn1 =  window.document.getElementById('txtn1')
+            var tn2 =  window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res') 
+
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2 
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
+        }
+        
+        var botao = window.document.getElementById('somar2')
+
+        function mbaixo() {
+            botao.style.background = 'orange'
+            botao.style.color = 'white'
+        }
+
+        function mcima() {
+            botao.style.background = 'white'
+            botao.style.color = 'black'
+        }
+    </script>
+    
+</body>
+</html>

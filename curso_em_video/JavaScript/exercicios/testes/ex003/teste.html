@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        div#calc {
+            background-color: blue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425);
+            font: normal bold 40px Arial, sans-serif;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="calc" onmousedown="apertar()" onmouseup="soltar()" onclick="verificar()">
+        Teste
+    </div>
+    <br>
+    <br> 
+    <br>
+    <div id="res">
+        teste 2 frase...
+    </div>
+
+    <script>
+        var botao = document.getElementById('calc')
+        function apertar() {
+            botao.style.background = 'black'
+        }
+        function soltar() {
+            botao.style.background = 'blue'
+        }
+
+        function verificar() {
+            let res = document.getElementById('res')
+
+            res.innerHTML = 'Oiiiiii'
+        }
+    </script>
+    
+</body>
+</html>
