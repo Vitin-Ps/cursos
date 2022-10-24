@@ -69,4 +69,15 @@ ao uar flex-grow, justify-content não tem mais efeito*/
     flex-grow: 3;
 }
 
+.basea {
+    flex-basis: auto;
+}
+
+.base0 {
+    flex-basis: 0;
+}
+
+.base1 {
+    flex-basis: 200px;
+}
 
