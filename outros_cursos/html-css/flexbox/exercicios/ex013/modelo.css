@@ -1,0 +1,146 @@
+@charset  "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+h1 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+div.container {
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    /*obs: nesse caso não é necessario*/ justify-content: center; /*controla o alinhamento pelo eixo principal ou main axis*/
+    align-content: center;/* cross axis */
+    align-items: center;
+    
+}
+
+div.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #5601a5;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row; /*linhas*/
+}
+
+.vertical {
+    flex-direction: column; /*colunas*/
+}
+
+.quebra {
+    flex-wrap: wrap;
+}
+
+.fluxo-quebra-horizontal {
+    flex-flow: row wrap;
+}
+
+/* o flex-grow ocupa a linha toda e a divisão de espaço varia com o tamanho ou seja um item com o grow 3 terá uma distribuição maior que um grow 2 
+
+ao uar flex-grow, justify-content não tem mais efeito*/
+.tam0 {
+    flex-grow: 0;
+}
+.tam1 {
+    flex-grow: 1;
+}
+.tam2 {
+    flex-grow: 2;
+}
+.tam3 {
+    flex-grow: 3;
+}
+
+.basea {
+    flex-basis: auto;
+}
+
+.base0 {
+    flex-basis: 0;
+}
+
+.base1 {
+    flex-basis: 200px;
+}
+
+.order0 {
+    order: 0;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.reduzir1 {
+    flex-shrink: 1;
+}
+
+.reduzir2 {
+    flex-shrink: 2;
+}
+
+.reduzir3 {
+    flex-shrink: 3;
+}
+.reduzir0 {
+    flex-shrink: 0;
+}
+
+.flex0 {
+    /* 
+    É um shorthand de (flex-grow flex-shrink flex-basis)
+                        n           1           0
+    */
+
+    flex: 0;
+}
+
+.flex1 {
+    flex: 1;
+
+}
+
+.aux{
+    flex: 1 1 0;
+}
+
+.inicio {
+    align-self: flex-start;
+}
+
+.meio {
+    align-self: center;
+}
+
+.base {
+    align-self: flex-end;
+}
+
+
