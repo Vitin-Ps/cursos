@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: black;
+            color: blueviolet;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #cacaca;
+        }
+
+        .lateral {
+            grid-area: lateral;
+        background-color: #bebebe;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: aqua;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px 400px auto;
+            grid-template-areas: 
+                "header header header header"
+                "main main main lateral"
+                "footer footer footer footer"
+
+            ;
+        }
+
+        .item {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <title>grid-template-area</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item main">main</div>
+        <div class="item lateral">lateral</div>
+        <div class="item footer">footer</div>
+    </div>
+    
+</body>
+</html>
