@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgba(0, 0, 255, 0.384);
+        }
+
+        .cab1 {
+            grid-area: cab1;
+        }
+
+        .cab2 {
+            grid-area: cab2;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .lateral {
+            grid-area: box4;
+            grid-area: 3 / 4 / 5 / 4;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+
+            grid-area: box2;
+        }
+
+        .box3 {
+            grid-area: box3;
+        }
+
+        section div {
+            border: 1px solid black;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: auto auto auto 170px;
+            grid-template-rows: 100px 30px 400px 200px;
+            grid-template-areas: 
+                "cab1 cab2 cab2 cab2"
+                "nav nav nav nav"
+                "main main main box4"
+                "box1 box2 box3 box4"
+            ;
+            
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <section>
+        <div class="cab1">box 1</div>
+        <div class="cab2">box 2</div>
+        <div class="nav">box 3</div>
+        <div class="main">box 4</div>
+        <div class="box4">box 5</div>
+        <div class="box1">box 6</div>
+        <div class="box2">box 7</div>
+        <div class="box3">box 8</div>
+    </section>
+</body>
+</html>
