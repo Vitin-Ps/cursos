@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    color: red;
+}
+
+body {
+    background-image: linear-gradient(to right, #0000ff62, #2a2afc62, #9f9ff762);
+    font: normal bold 15pt Arial, sans-serif;
+}
+
+section {
+    max-width: 800px;
+    background-color: white;
+    padding: 10px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+}
+
+/*2 - Sintaxe*/
+
+@media screen and (max-width: 600px) {
+    /*max-width = telas menores que alguma resolução*/
+    h1 {
+        color: blue;
+    }
+}
+
+/* 3- Outros modos */
+/* 
+screen = tela 
+print = inpressões
+speech = leitores de tela que vão fazer reconhecimento por voz do que está na página, 
+all = todos 
+*/
+
+@media print and (max-width: 600px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* 4- all */
+
+@media (max-width: 600px) {
+    h2 {
+        color: blueviolet;
+    }
+}
+
+/*5- moblie fist */
+
+/* min-width > max-width */
+
+@media (min-width: 200px) {
+    h2{
+        color: teal;
+    }
+}
+
+/* 6- AND na media query */
+
+@media (min-width: 300px) and (max-width: 400px) {
+    h2 {
+        font-size: 3em;
+    }
+
+}
+
+/*  7- orientação = quando vira o celular*/
+
+@media (orientation: landscape) {
+    h3 {
+        color : brown;
+    }
+}
+
+/* 8- OR na media query */
+
+@media (max-width: 200px), (orientation: landscape) {
+    /* quando for um dispositivo menor que 200px ou estiver virado em landscape */
+
+}
