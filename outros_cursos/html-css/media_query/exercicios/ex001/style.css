@@ -84,5 +84,60 @@ all = todos
 
 @media (max-width: 200px), (orientation: landscape) {
     /* quando for um dispositivo menor que 200px ou estiver virado em landscape */
+    h3 {
+        font-size: 4em;
+    }
+}
 
+/* 9- Cuidado ao Aplicar media query */
+
+@media (min-width: 600px) {
+    h4 {
+        color: red;
+    }
+}
+
+/* a oredem no css importa, o ultimo código sempre se sobrescreve sobre outro */
+
+/* 
+h4 {
+    color: blue;
+} 
+*/
+
+/* O certo era esse h4 esta no topo do css */
+
+/* 10- breakpoints */
+
+h5 {
+    color: aqua;
+    font-size: 2em;
+}
+
+/* 480px - 760px = Tablet */
+@media (min-width: 480px) {
+    h5 {
+        color: burlywood;
+    }
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+    h5 {
+        color: cadetblue;
+    }
+}
+
+/* 1024px - 1200px = desktop*/
+@media (min-width: 1024px) {
+    h5 {
+        color: coral;
+    }
+} 
+
+/* 1200px e + = telas maiores, tvs */
+@media (min-width: 1200px) {
+    h5 {
+        color: yellow;
+    }
 }
